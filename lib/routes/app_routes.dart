@@ -43,10 +43,10 @@ class AppRoutes {
     ),
     GetPage(
       name: homeScreen,
-      page: () =>  HomeScreen(),
+      page: () => const HomeScreen(),
       bindings: [
         HomeBinding(),
-      ]
+      ],
     ), //HomeScreen
 
     GetPage(
@@ -63,7 +63,7 @@ class AppRoutes {
     ),
     GetPage(
       name: profileScreen,
-      page: () => const ProfileScreen(),
+      page: () =>  ProfileScreen(),
     ),
   ];
 }

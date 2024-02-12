@@ -5,19 +5,21 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'controller/profile_controller.dart';
 
-class ProfileScreen extends GetView<ProfileController> {
-  const ProfileScreen({super.key});
+class ProfileScreen extends StatelessWidget {
+  ProfileScreen({super.key});
+  final controller = Get.put(ProfileController());
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Profile'),
+        title: Text('lbl_profile'.tr),
         elevation: 0,
       ),
       body: Padding(
@@ -83,7 +85,7 @@ class ProfileScreen extends GetView<ProfileController> {
               ),
               splashColor: Theme.of(context).primaryColor.withOpacity(0.2),
               leading: const Icon(CupertinoIcons.person),
-              title: const Text('Edit Profile'),
+              title:  Text('edit_profile'.tr),
               trailing: const Icon(CupertinoIcons.right_chevron),
             ),
             //notification
@@ -94,18 +96,106 @@ class ProfileScreen extends GetView<ProfileController> {
               splashColor: Theme.of(context).primaryColor.withOpacity(0.2),
               onTap: () {},
               leading: const Icon(Iconsax.notification),
-              title: const Text('Notification'),
+              title:  Text('lbl_notifications'.tr),
               trailing: const Icon(CupertinoIcons.right_chevron),
             ),
             //language settings
             ListTile(
-              onTap: () {},
+              onTap: () {
+                showModalBottomSheet(
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20),
+                    ),
+                  ),
+                  context: context,
+                  builder: (context) {
+                    return SizedBox(
+                      height: 300,
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ListTile(
+                              onTap: () => controller.changeLanguage('en_US'),
+                              leading: SvgPicture.asset(
+                                'assets/svg/flag-united-kingdom.svg',
+                                width: 30,
+                              ),
+                              title:  Text(
+                                'lbl_english'.tr,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const Divider(height: 1, thickness: 1),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ListTile(
+                              onTap: () => controller.changeLanguage('ru_RU'),
+                              leading: SvgPicture.asset(
+                                'assets/svg/flag-russia.svg',
+                                width: 30,
+                              ),
+                              title:  Text(
+                                'lbl_russian'.tr,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const Divider(height: 1, thickness: 1),
+                          //uzbekistan language
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ListTile(
+                              onTap: () => controller.changeLanguage('uz_UZ'),
+                              leading: SvgPicture.asset(
+                                'assets/svg/flag-uzbekistan.svg',
+                                width: 30,
+                              ),
+                              title:  Text(
+                                'lbl_uzbek'.tr,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ),
+                          //kazakhstan language
+                          const Divider(height: 1, thickness: 1),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ListTile(
+                              onTap: () => controller.changeLanguage('kz_KZ'),
+                              leading: SvgPicture.asset(
+                                'assets/svg/flag-kazakhstan.svg',
+                                width: 30,
+                              ),
+                              title:  Text(
+                                'lbl_kazakh'.tr,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
+                );
+              },
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(50),
               ),
               splashColor: Theme.of(context).primaryColor.withOpacity(0.2),
               leading: const Icon(Iconsax.language_circle),
-              title: const Text('Language'),
+              title:  Text('lbl_languages'.tr),
               trailing: const Icon(CupertinoIcons.right_chevron),
             ),
             //change password
@@ -116,7 +206,7 @@ class ProfileScreen extends GetView<ProfileController> {
               ),
               splashColor: Theme.of(context).primaryColor.withOpacity(0.2),
               leading: const Icon(Iconsax.lock),
-              title: const Text('Change Password'),
+              title:  Text('lbl_change_password'.tr),
               trailing: const Icon(CupertinoIcons.right_chevron),
             ),
             //logout
@@ -127,7 +217,7 @@ class ProfileScreen extends GetView<ProfileController> {
               ),
               splashColor: Theme.of(context).primaryColor.withOpacity(0.2),
               leading: const Icon(Iconsax.logout),
-              title: const Text('Logout'),
+              title:  Text('lbl_logout'.tr),
               trailing: const Icon(CupertinoIcons.right_chevron),
             ),
           ],

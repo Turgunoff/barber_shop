@@ -17,6 +17,7 @@ class Assets {
   static const String homeScreenHomeScreen = 'lib/presentation/home_screen/home_screen.dart';
   static const String imagesLottieSplash = 'assets/images/lottie_splash.json';
   static const String inboxScreenInboxScreen = 'lib/presentation/inbox_screen/inbox_screen.dart';
+  static const String kzKzKzKz = 'lib/localization/kz_kz/kz_kz.dart';
   static const String libFirebaseOptions = 'lib/firebase_options.dart';
   static const String libMain = 'lib/main.dart';
   static const String localizationAppLocalization = 'lib/localization/app_localization.dart';
@@ -26,10 +27,16 @@ class Assets {
   static const String navigationNavigationPage = 'lib/presentation/navigation/navigation_page.dart';
   static const String profileScreenProfileScreen = 'lib/presentation/profile_screen/profile_screen.dart';
   static const String routesAppRoutes = 'lib/routes/app_routes.dart';
+  static const String ruRuRuRu = 'lib/localization/ru_ru/ru_ru.dart';
   static const String splashScreenSplashScreen = 'lib/presentation/splash_screen/splash_screen.dart';
+  static const String svgFlagKazakhstan = 'assets/svg/flag-kazakhstan.svg';
+  static const String svgFlagRussia = 'assets/svg/flag-russia.svg';
+  static const String svgFlagUnitedKingdom = 'assets/svg/flag-united-kingdom.svg';
+  static const String svgFlagUzbekistan = 'assets/svg/flag-uzbekistan.svg';
   static const String themeThemeHelper = 'lib/theme/theme_helper.dart';
   static const String themeThemeService = 'lib/theme/theme_service.dart';
   static const String utilsInitialBindings = 'lib/core/utils/initial_bindings.dart';
+  static const String uzUzUzUz = 'lib/localization/uz_uz/uz_uz.dart';
   static const String widgetsCategoryItemWidget = 'lib/presentation/splash_screen/widgets/category_item_widget.dart';
 
 }

@@ -8,7 +8,7 @@ import 'package:flutter/services.dart';
 
 class ThemeHelper {
   final lightTheme = ThemeData.light().copyWith(
-    primaryColor: const Color(0xFFFBA62B),
+    primaryColor: const Color(0xFFFB9400),
     primaryColorLight: const Color(0xFFFBA62B),
     scaffoldBackgroundColor: Colors.white,
     appBarTheme: const AppBarTheme(
@@ -24,7 +24,7 @@ class ThemeHelper {
     ),
   );
   final darkTheme = ThemeData.dark().copyWith(
-    primaryColor: const Color(0xFFFBA62B),
+    primaryColor: const Color(0xFFFB9400),
     scaffoldBackgroundColor: const Color(0xFF181A20),
     appBarTheme: const AppBarTheme(
       color: Color(0xFF181A20),

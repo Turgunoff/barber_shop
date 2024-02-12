@@ -41,6 +41,7 @@ dependencies:
   firebase_auth: ^4.16.0
   get_storage: ^2.1.1
   iconsax: ^0.0.8
+  flutter_svg: ^2.0.9
 
 dev_dependencies:
   flutter_test:
@@ -98,4 +99,5 @@ flutter:
     - lib/widgets/
     - lib/routes/
     - assets/images/
+    - assets/svg/
 

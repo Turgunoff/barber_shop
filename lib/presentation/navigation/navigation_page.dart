@@ -25,11 +25,11 @@ class NavigationPage extends StatelessWidget {
           child: IndexedStack(
             index: controller.tabIndex,
             children: [
-              HomeScreen(),
+              const HomeScreen(),
               const ExploreScreen(),
               const MyBookingScreen(),
               const InboxScreen(),
-              const ProfileScreen(),
+              ProfileScreen(),
             ],
           ),
         ),
@@ -46,23 +46,23 @@ class NavigationPage extends StatelessWidget {
           items: [
             _bottomNavigationBarItem(
               icon: CupertinoIcons.home,
-              label: 'Home',
+              label: 'lbl_home'.tr,
             ),
             _bottomNavigationBarItem(
               icon: CupertinoIcons.location_solid,
-              label: 'Explore',
+              label: 'lbl_explore'.tr,
             ),
             _bottomNavigationBarItem(
               icon: CupertinoIcons.calendar_today,
-              label: 'My Booking',
+              label: 'lbl_my_booking'.tr,
             ),
             _bottomNavigationBarItem(
               icon: CupertinoIcons.chat_bubble_fill,
-              label: 'Inbox',
+              label: 'lbl_inbox'.tr,
             ),
             _bottomNavigationBarItem(
               icon: CupertinoIcons.person,
-              label: 'Profile',
+              label: 'lbl_profile'.tr,
             ),
           ],
         ),

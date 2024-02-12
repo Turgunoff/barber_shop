@@ -31,10 +31,12 @@ class _HomeScreenState extends State<HomeScreen> {
     Timer.periodic(const Duration(seconds: 3), (timer) {
       if (_pageController.page == imageUrls.length - 1) {
         _pageController.animateToPage(0,
-            duration: const Duration(milliseconds: 500), curve: Curves.easeInOut);
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeInOut);
       } else {
         _pageController.nextPage(
-            duration: const Duration(milliseconds: 500), curve: Curves.easeInOut);
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeInOut);
       }
     });
   }
@@ -43,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Screen'),
+        title: Text("lbl_home".tr),
         actions: [
           Row(
             children: [
@@ -91,9 +93,9 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Row(
                 children: [
-                  const Text(
-                    'Nearby your location',
-                    style: TextStyle(
+                   Text(
+                    'lbl_nearby_your_location'.tr,
+                    style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w500,
                     ),
