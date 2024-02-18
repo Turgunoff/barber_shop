@@ -85,7 +85,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               splashColor: Theme.of(context).primaryColor.withOpacity(0.2),
               leading: const Icon(CupertinoIcons.person),
-              title:  Text('edit_profile'.tr),
+              title: Text('edit_profile'.tr),
               trailing: const Icon(CupertinoIcons.right_chevron),
             ),
             //notification
@@ -96,7 +96,7 @@ class ProfileScreen extends StatelessWidget {
               splashColor: Theme.of(context).primaryColor.withOpacity(0.2),
               onTap: () {},
               leading: const Icon(Iconsax.notification),
-              title:  Text('lbl_notifications'.tr),
+              title: Text('lbl_notifications'.tr),
               trailing: const Icon(CupertinoIcons.right_chevron),
             ),
             //language settings
@@ -123,9 +123,9 @@ class ProfileScreen extends StatelessWidget {
                                 'assets/svg/flag-united-kingdom.svg',
                                 width: 30,
                               ),
-                              title:  Text(
+                              title: Text(
                                 'lbl_english'.tr,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 16,
                                 ),
                               ),
@@ -140,9 +140,9 @@ class ProfileScreen extends StatelessWidget {
                                 'assets/svg/flag-russia.svg',
                                 width: 30,
                               ),
-                              title:  Text(
+                              title: Text(
                                 'lbl_russian'.tr,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 16,
                                 ),
                               ),
@@ -158,27 +158,9 @@ class ProfileScreen extends StatelessWidget {
                                 'assets/svg/flag-uzbekistan.svg',
                                 width: 30,
                               ),
-                              title:  Text(
+                              title: Text(
                                 'lbl_uzbek'.tr,
-                                style: TextStyle(
-                                  fontSize: 16,
-                                ),
-                              ),
-                            ),
-                          ),
-                          //kazakhstan language
-                          const Divider(height: 1, thickness: 1),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: ListTile(
-                              onTap: () => controller.changeLanguage('kz_KZ'),
-                              leading: SvgPicture.asset(
-                                'assets/svg/flag-kazakhstan.svg',
-                                width: 30,
-                              ),
-                              title:  Text(
-                                'lbl_kazakh'.tr,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 16,
                                 ),
                               ),
@@ -195,7 +177,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               splashColor: Theme.of(context).primaryColor.withOpacity(0.2),
               leading: const Icon(Iconsax.language_circle),
-              title:  Text('lbl_languages'.tr),
+              title: Text('lbl_languages'.tr),
               trailing: const Icon(CupertinoIcons.right_chevron),
             ),
             //change password
@@ -206,7 +188,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               splashColor: Theme.of(context).primaryColor.withOpacity(0.2),
               leading: const Icon(Iconsax.lock),
-              title:  Text('lbl_change_password'.tr),
+              title: Text('lbl_change_password'.tr),
               trailing: const Icon(CupertinoIcons.right_chevron),
             ),
             //logout
@@ -217,7 +199,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               splashColor: Theme.of(context).primaryColor.withOpacity(0.2),
               leading: const Icon(Iconsax.logout),
-              title:  Text('lbl_logout'.tr),
+              title: Text('lbl_logout'.tr),
               trailing: const Icon(CupertinoIcons.right_chevron),
             ),
           ],

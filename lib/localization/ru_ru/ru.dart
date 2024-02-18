@@ -6,8 +6,8 @@
 final Map<String, String> ruRU = {
   "lbl_home": "Главная",
   "lbl_explore": "Исследовать",
-  "lbl_my_booking": "Мои бронирования",
-  "lbl_inbox": "Входящие сообщения",
+  "lbl_my_booking": "Бронирования",
+  "lbl_inbox": "Cообщения",
   "lbl_profile": "Профиль",
   "lbl_categories": "Категории",
   "lbl_nearby_your_location": "Рядом с вашим",
@@ -20,4 +20,8 @@ final Map<String, String> ruRU = {
   "lbl_languages": "Языки",
   "lbl_change_password": "Изменить пароль",
   "lbl_logout": "Выйти",
+  "lbl_see_all": "Посмотреть все",
+  "lbl_hello": "Привет",
+
+
 };

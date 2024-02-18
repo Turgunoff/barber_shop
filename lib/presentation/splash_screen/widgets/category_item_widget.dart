@@ -6,7 +6,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../home_screen/controller/home_controller.dart';
+import '../../home/controller/home_controller.dart';
 
 class CategoryItemWidget extends StatelessWidget {
   const CategoryItemWidget({
@@ -33,7 +33,7 @@ class CategoryItemWidget extends StatelessWidget {
               },
               child: Material(
                 elevation: 0,
-                borderRadius: BorderRadius.circular(50),
+                borderRadius: BorderRadius.circular(4.0),
                 child: Container(
                   decoration: BoxDecoration(
                     color: controller
@@ -42,7 +42,7 @@ class CategoryItemWidget extends StatelessWidget {
                         : Get.isDarkMode
                         ? Colors.transparent
                         : Colors.white,
-                    borderRadius: BorderRadius.circular(50),
+                    borderRadius: BorderRadius.circular(8.0),
                     border: Border.all(
                       width: 2,
                       color: Theme.of(context).primaryColor,

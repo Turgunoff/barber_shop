@@ -4,7 +4,7 @@
 //
 
 import 'package:barber_shop/presentation/explore_screen/explore_screen.dart';
-import 'package:barber_shop/presentation/home_screen/home_screen.dart';
+import 'package:barber_shop/presentation/home/home_screen.dart';
 import 'package:barber_shop/presentation/inbox_screen/inbox_screen.dart';
 import 'package:barber_shop/presentation/my_booking_screen/my_booking_screen.dart';
 import 'package:barber_shop/presentation/profile_screen/profile_screen.dart';

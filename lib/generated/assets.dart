@@ -11,13 +11,12 @@ class Assets {
   static const String controllerNavigationController = 'lib/presentation/navigation/controller/navigation_controller.dart';
   static const String controllerProfileController = 'lib/presentation/profile_screen/controller/profile_controller.dart';
   static const String controllerSplashController = 'lib/presentation/splash_screen/controller/splash_controller.dart';
-  static const String enUsEnUs = 'lib/localization/en_us/en_us.dart';
+  static const String enUsEn = 'lib/localization/en_us/en.dart';
   static const String exploreScreenExploreScreen = 'lib/presentation/explore_screen/explore_screen.dart';
   static const String generatedAssets = 'lib/generated/assets.dart';
   static const String homeScreenHomeScreen = 'lib/presentation/home_screen/home_screen.dart';
   static const String imagesLottieSplash = 'assets/images/lottie_splash.json';
   static const String inboxScreenInboxScreen = 'lib/presentation/inbox_screen/inbox_screen.dart';
-  static const String kzKzKzKz = 'lib/localization/kz_kz/kz_kz.dart';
   static const String libFirebaseOptions = 'lib/firebase_options.dart';
   static const String libMain = 'lib/main.dart';
   static const String localizationAppLocalization = 'lib/localization/app_localization.dart';
@@ -27,7 +26,7 @@ class Assets {
   static const String navigationNavigationPage = 'lib/presentation/navigation/navigation_page.dart';
   static const String profileScreenProfileScreen = 'lib/presentation/profile_screen/profile_screen.dart';
   static const String routesAppRoutes = 'lib/routes/app_routes.dart';
-  static const String ruRuRuRu = 'lib/localization/ru_ru/ru_ru.dart';
+  static const String ruRuRu = 'lib/localization/ru_ru/ru.dart';
   static const String splashScreenSplashScreen = 'lib/presentation/splash_screen/splash_screen.dart';
   static const String svgFlagKazakhstan = 'assets/svg/flag-kazakhstan.svg';
   static const String svgFlagRussia = 'assets/svg/flag-russia.svg';
@@ -36,7 +35,7 @@ class Assets {
   static const String themeThemeHelper = 'lib/theme/theme_helper.dart';
   static const String themeThemeService = 'lib/theme/theme_service.dart';
   static const String utilsInitialBindings = 'lib/core/utils/initial_bindings.dart';
-  static const String uzUzUzUz = 'lib/localization/uz_uz/uz_uz.dart';
+  static const String uzUzUz = 'lib/localization/uz_uz/uz.dart';
   static const String widgetsCategoryItemWidget = 'lib/presentation/splash_screen/widgets/category_item_widget.dart';
 
 }

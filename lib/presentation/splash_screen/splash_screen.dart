@@ -27,7 +27,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Timer(
       const Duration(seconds: 4),
-      () => Get.offNamed(AppRoutes.navigationPage),
+        ()=>Get.offNamed(AppRoutes.signInScreen),
+      // () => Get.offNamed(AppRoutes.navigationPage),
     );
   }
 

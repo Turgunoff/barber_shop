@@ -8,14 +8,15 @@ import 'package:flutter/services.dart';
 
 class ThemeHelper {
   final lightTheme = ThemeData.light().copyWith(
-    primaryColor: const Color(0xFFFB9400),
-    primaryColorLight: const Color(0xFFFBA62B),
+    primaryColor: const Color(0xFF0EBE7F),
+    primaryColorLight: const Color(0xFF0EBE7F),
     scaffoldBackgroundColor: Colors.white,
     appBarTheme: const AppBarTheme(
       centerTitle: false,
       systemOverlayStyle: SystemUiOverlayStyle.light,
       titleTextStyle: TextStyle(
         color: Colors.black,
+        fontSize: 18.0
       ),
     ),
     buttonTheme: const ButtonThemeData(
@@ -31,6 +32,7 @@ class ThemeHelper {
       systemOverlayStyle: SystemUiOverlayStyle.dark,
       titleTextStyle: TextStyle(
         color: Colors.white,
+          fontSize: 18.0
       ),
     ),
   );

@@ -20,4 +20,6 @@ final Map<String, String> enUs = {
   "lbl_change_password": "Change Password",
   "lbl_logout": "Logout",
   "lbl_profile": "Profile",
+  "lbl_see_all": "See All",
+  "lbl_hello": "Hello",
 };

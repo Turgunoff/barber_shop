@@ -5,8 +5,8 @@
 
 final Map<String, String> uzUZ = {
   "lbl_home": "Bosh sahifa",
-  "lbl_explore": "Ko'rib chiqish",
-  "lbl_my_booking": "Mening buyurtmalarim",
+  "lbl_explore": "Joylashuv",
+  "lbl_my_booking": "Buyurtmalarim",
   "lbl_inbox": "Xabarlar",
   "lbl_profile": "Profil",
   "lbl_categories": "Kategoriyalar",
@@ -20,4 +20,7 @@ final Map<String, String> uzUZ = {
   "lbl_languages": "Tillar",
   "lbl_change_password": "Parolni o'zgartirish",
   "lbl_logout": "Chiqish",
+  "lbl_see_all": "Barchasini ko'rish",
+  "lbl_hello": "Salom",
+
 };

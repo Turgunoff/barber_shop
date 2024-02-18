@@ -5,8 +5,10 @@
 
 import 'package:get/get.dart';
 
-import '../presentation/home_screen/bindings/home_binding.dart';
-import '../presentation/home_screen/home_screen.dart';
+import '../presentation/auth/sign_in_screen/sign_in_screen.dart';
+import '../presentation/auth/sign_up_screen/sign_up_screen.dart';
+import '../presentation/home/bindings/home_binding.dart';
+import '../presentation/home/home_screen.dart';
 import '../presentation/navigation/navigation_bindings/navigation_binding.dart';
 import '../presentation/splash_screen/binding/splash_binding.dart';
 import '../presentation/splash_screen/splash_screen.dart';
@@ -25,6 +27,8 @@ class AppRoutes {
   static const String inboxScreen = '/inboxScreen';
   static const String profileScreen = '/profileScreen';
   static const String initialRoute = '/initialRoute';
+  static const String signInScreen = '/signInScreen';
+  static const String signUpScreen = '/signUpScreen';
 
   static List<GetPage> pages = [
     GetPage(
@@ -47,8 +51,7 @@ class AppRoutes {
       bindings: [
         HomeBinding(),
       ],
-    ), //HomeScreen
-
+    ),
     GetPage(
       name: exploreScreen,
       page: () => const ExploreScreen(),
@@ -63,7 +66,15 @@ class AppRoutes {
     ),
     GetPage(
       name: profileScreen,
-      page: () =>  ProfileScreen(),
+      page: () => ProfileScreen(),
+    ),
+    GetPage(
+      name: signInScreen,
+      page: () => SignInScreen(),
+    ),
+    GetPage(
+      name: signUpScreen,
+      page: () => SignUpScreen(),
     ),
   ];
 }

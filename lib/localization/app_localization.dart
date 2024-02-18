@@ -5,10 +5,9 @@
 
 import 'package:get/get.dart';
 
-import 'en_us/en_us.dart';
-import 'kz_kz/kz_kz.dart';
-import 'ru_ru/ru_ru.dart';
-import 'uz_uz/uz_uz.dart';
+import 'en_us/en.dart';
+import 'ru_ru/ru.dart';
+import 'uz_uz/uz.dart';
 
 class AppLocalization extends Translations {
   @override
@@ -16,6 +15,5 @@ class AppLocalization extends Translations {
         'en_US': enUs,
         'ru_RU': ruRU,
         'uz_UZ': uzUZ,
-        'kz_KZ': kzKZ,
       };
 }
