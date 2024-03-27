@@ -8,6 +8,7 @@ import 'package:get_storage/get_storage.dart';
 
 import 'firebase_options.dart';
 import 'localization/app_localization.dart';
+import 'presentation/auth/controller/auth_controller.dart';
 import 'routes/app_routes.dart';
 
 void main() async {
